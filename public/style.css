@@ -1,0 +1,68 @@
+body {
+  background-image: url("./images/cork-wallet.png");
+
+  }
+
+.jumbotron {
+  text-align: center;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  /*background-image: url("./images/newsimage.jpeg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+}
+
+.col-sm-4 {
+  height: 400px;
+  text-align: center;
+  padding: 1px;
+  /*border-style: dotted;
+  border-color: black;*/
+  /*padding: 100px;*/
+  /*margin:5px;*/
+}
+
+.commentBox{
+background-color: white;
+width: 90%;
+height: 150px;
+margin-left: auto;
+margin-right: auto;
+word-wrap: break-word;
+overflow: scroll;
+
+
+/*border-bottom-color: black;
+border-bottom-width: 1px;
+border-bottom-style: solid;*/
+}
+
+#noteBox {
+  background-color: silver;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: solid black 1px;
+}
+
+ul {
+  padding-left: 2px;
+}
+
+.li {
+ list-style: none; 
+ text-align: center;
+}
+
+.input {
+width: 90%;
+
+}
+
+/*#time {
+  width: 10%;
+  height: 100px;
+  background-color: white;
+  float: right;
+}*/
+

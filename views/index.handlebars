@@ -1,0 +1,31 @@
+{{#each articles}}
+
+<div>
+  <div class='col-sm-4'>
+    <div>
+     <a href="/articles/{{_id}}"><h3>{{title}}</h3></a>
+    </div> 
+    <div>
+     <h4><p><a href="{{link}}">{{link}}</a></p></h4>
+    </div><br>
+    <div class="commentBox">
+    <p>Comments:</p>
+    <ul>
+    {{#each notes}}
+      <div id="noteBox">
+      <br><li class="li">{{title}}</li>
+      <br><button action="delete/note/:id" type="Delete" class="deleteButton">Delete Comment Above</button><br><br><br>
+      {{!-- <li>{{body}}</li> --}}
+      </div>
+    {{/each}}
+    </ul>
+    </div><br>
+      <form action="/articles/{{_id}}" method="POST" >
+        <input placeholder="Type a comment!" type="text" name="title" class="input"><br>
+        {{!-- <input type="text" name="body" class="input"><br>  --}}         
+        <br><input type="submit" class="commentButton"></input>          
+      </form>
+  </div>
+</div>
+
+{{/each}}
